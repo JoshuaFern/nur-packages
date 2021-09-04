@@ -20,6 +20,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with stdenv.lib; {
+    broken = true; # Not actually, just saving my ci time
     description = "A flasher for Qualcomm's Emergency Download (EDL) mode";
     homepage = "https://github.com/andersson/qdl/";
     license = licenses.bsd3;

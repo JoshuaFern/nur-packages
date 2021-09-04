@@ -16,6 +16,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ alsaLib libpulseaudio libjack2 ];
 
   meta = with stdenv.lib; {
+    broken = true; # Not actually, just saving my ci time
     description = "A simple audio over UDP protocol proposed by VB-Audio";
     homepage = "https://github.com/quiniouben/vban";
     license = licenses.gpl3;

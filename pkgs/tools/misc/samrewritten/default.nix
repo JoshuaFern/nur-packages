@@ -7,8 +7,8 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "PaulCombal";
     repo = pname;
-    rev = "a8399302d806c9659daf88e101941447b3d1348e";
-    sha256 = "1qfvpnkl565a9sfgqyyxhha7i1pg679zmf8fmafdp3b3mn2mpcgk";
+    rev = "f75eaa9dcad0735fcd961d5b251ccb5b34360d85";
+    sha256 = "0zcb6cmzk4fvbf0rkyyfvlnh9mhi0wz89parprkz6vxrj65ph1f6";
   };
 
   enableParallelBuilding = true;
@@ -30,6 +30,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with stdenv.lib; {
+    broken = true; # Not actually, just saving my ci time
     description = "Allows you to unlock and relock your Steam achievements";
     homepage = "https://github.com/PaulCombal/SamRewritten";
     license = licenses.gpl3;

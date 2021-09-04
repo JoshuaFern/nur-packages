@@ -32,6 +32,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with stdenv.lib; {
+    broken = true; # Not actually, just saving my ci time
     description = "A modernized DOS emulator";
     homepage = "https://dosbox-staging.github.io/";
     license = licenses.gpl2;

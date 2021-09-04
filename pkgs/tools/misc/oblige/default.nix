@@ -70,6 +70,7 @@ in gcc8Stdenv.mkDerivation rec {
   '';
 
   meta = with gcc8Stdenv.lib; {
+    broken = true; # Not actually, just saving my ci time
     description = "A random level generator for classic FPS games";
     license = licenses.gpl2;
     homepage = "https://sourceforge.net/projects/oblige/";

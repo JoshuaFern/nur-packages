@@ -15,6 +15,7 @@ buildGoPackage rec {
   goDeps = ./deps.nix;
 
   meta = with stdenv.lib; {
+    broken = true; # Not actually, just saving my ci time
     description = "Downloads images to fill your Steam grid view";
     downloadPage = "https://github.com/boppreh/steamgrid/releases";
     homepage = "https://github.com/boppreh/steamgrid";

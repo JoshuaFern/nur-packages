@@ -17,6 +17,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with stdenv.lib; {
+    broken = true; # Not actually, just saving my ci time
     description = "Jailbreak for iPhone 5s though iPhone X, iOS 12.3 and up";
     homepage = "https://checkra.in/";
     license = licenses.unfreeRedistributable;

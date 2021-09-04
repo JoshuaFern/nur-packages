@@ -24,6 +24,9 @@
   checkra1n = pkgs.callPackage ./pkgs/development/mobile/checkra1n { };
   qdl = pkgs.callPackage ./pkgs/development/mobile/qdl { };
 
+  # games
+  qpakman = pkgs.callPackage ./pkgs/games/qpakman { };
+
   # misc/emulators
   citra = pkgs.libsForQt5.callPackage ./pkgs/misc/emulators/citra { };
   dosbox-staging = pkgs.callPackage ./pkgs/misc/emulators/dosbox-staging { };

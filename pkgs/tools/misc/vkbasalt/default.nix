@@ -84,6 +84,7 @@ in multiStdenv.mkDerivation rec {
   '';
 
   meta = with multiStdenv.lib; {
+    broken = true; # Not actually, just saving my ci time
     description =
       "A Vulkan post processing layer to enhance the visual graphics of games";
     homepage = "https://github.com/DadSchoorse/vkBasalt";
